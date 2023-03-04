@@ -15,8 +15,9 @@ public class IntStack {
 
     public void push(int value) throws StackFullException {
 
-        if (this.pointer == stack.length-1) {
-            throw new StackFullException("Stack is full");
+        if (this.pointer == stack.length - 1) {
+            //throw new StackFullException("Stack is full");
+            throw new StackFullException(stack.length);
         }
 
         pointer++;

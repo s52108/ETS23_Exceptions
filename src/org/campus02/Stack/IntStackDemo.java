@@ -21,7 +21,9 @@ public class IntStackDemo {
             e.printStackTrace();
             System.out.println("Exception gefangen");
 
-        }*/ catch (StackEmptyException e) {
+        } catch (Exception e) {
+
+        } */ catch (StackEmptyException e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
         } catch (StackFullException e) {
